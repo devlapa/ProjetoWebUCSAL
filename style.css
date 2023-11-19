@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+.menu {
+    margin-top: 30px;
+}
+
+.menu-label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4caf50;
+}
+
+label, select, button {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+select, button {
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+select:hover, select:focus, button:hover, button:focus {
+    border-color: #4caf50;
+    transform: scale(1.03);
+}
+
+button {
+    background: linear-gradient(to right, #4caf50, #45a049);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #45a049, #4caf50);
+    transform: scale(1.02);
+}
+
+/* Estilize os nomes no menu de seleção de prato */
+.select-label {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+#order-details {
+    margin-top: 50px;
+    padding: 30px;
+    background: linear-gradient(to bottom, #f0f0f0, #d0d0d0);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+#order-details:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#order-details h2 {
+    color: #333;
+    border-bottom: 2px solid #555;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+#order-details p {
+    margin: 15px 0;
+    transition: color 0.3s;
+}
+
+#order-details p:hover {
+    color: #4caf50;
+}
+
+.menu-bg {
+    background: linear-gradient(to bottom, #4caf50, #45a049);
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.menu-bg img {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+    transition: filter 0.3s;
+}
+
+.menu-bg:hover img {
+    filter: brightness(100%);
+}
+
+.menu-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.menu-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.menu-content p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.menu-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: #4caf50;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-content a:hover {
+    background: #4caf50;
+    color: #fff;
+}

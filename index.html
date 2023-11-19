@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurante</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Menu do Restaurante</h1>
+
+        <div id="order-details">
+            <h2>Pedido</h2>
+            <p id="order-id">ID do Pedido: </p>
+            <p id="order-date">Data do Pedido: </p>
+            <p id="starter">Entrada: </p>
+            <p id="main-course">Prato Principal: </p>
+            <p id="dessert">Sobremesa: </p>
+        </div>
+
+        <div class="menu">
+            <h2>Escolha seu Pedido</h2>
+
+            <label for="starter-select">Entrada:</label>
+            <select id="starter-select">
+                <option value="Torresmo">Torresmo</option>
+                <option value="Bolinho de Bacalhau">Bolinho de Bacalhau</option>
+                <option value="Batata Frita">Batata Frita</option>
+            </select>
+
+            <label for="main-course-select">Prato Principal:</label>
+            <select id="main-course-select">
+                <option value="Feijoada">Feijoada</option>
+                <option value="Macarronada">Macarronada</option>
+                <option value="Bobó de Camarão">Bobó de Camarão</option>
+            </select>
+
+            <label for="dessert-select">Sobremesa:</label>
+            <select id="dessert-select">
+                <option value="Petit Gâteau">Petit Gâteau</option>
+                <option value="Brownie">Brownie</option>
+                <option value="Salada de Frutas">Salada de Frutas</option>
+            </select>
+
+            <button onclick="placeOrder()">Fazer Pedido</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
